@@ -1,0 +1,22 @@
+# Dependencias para modelos LLM híbridos (local + remoto)
+
+# Cliente OpenAI para modelos remotos
+openai>=1.0.0
+
+# Requests para comunicación con Ollama
+requests>=2.31.0
+
+# Utilidades del sistema
+psutil>=5.9.0
+
+# Procesamiento de texto
+nltk>=3.8
+transformers>=4.30.0  # Para futuros modelos locales con transformers
+
+# Opcional: Para usar modelos con Hugging Face directamente
+torch>=2.0.0
+accelerate>=0.20.0
+
+# Para análisis de rendimiento
+matplotlib>=3.7.0
+pandas>=2.0.0

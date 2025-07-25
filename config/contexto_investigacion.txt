@@ -1,0 +1,56 @@
+CAPÍTULO I. PLANTEAMIENTO DE LA INVESTIGACIÓN 
+1.1 Introducción 
+Estudiar una carrera universitaria con alta exigencia académica puede implicar varios retos emocionales y cognitivos, lo que puede presentar una problemática si no se aborda de forma adecuada. Uno de los principales riesgos y objeto de estudio de esta investigación es el burnout, síndrome que se manifiesta como un estado de agotamiento físico y mental asociado al estrés crónico, ya sea por demandas académicas o tecnológicas. 
+
+Este fenómeno se suele identificar por síntomas como fatiga emocional, irritación, bajo rendimiento, los cuales son causa de falta de estrategias de afrontamiento y de planificación deficiente de actividades, que suele representar una dificultad para equilibrar el estado emocional y las responsabilidades de los estudiantes. 
+
+Esta investigación busca analizar el comportamiento de estudiantes de la carrera de Ingeniería en Sistemas de la Universidad Nacional Autónoma de Honduras (UNAH), específicamente entre tercer y cuarto año, en relación con el síndrome de burnout, con el propósito de identificar los factores y causas que provocan su aparición. 
+
+Como parte de esta investigación, se propone una solución tecnológica equivalente a un asistente de planificación académica para la detección temprana de burnout y a la gestión de las actividades de los estudiantes, con el objetivo de acompañar y facilitar el desempeño académico de los estudiantes. 
+
+1.2 Antecedentes 
+La UNAH es la principal institución de educación superior pública del país, ofrece una sólida formación académica y una amplia proyección internacional. Cuenta con programas de movilidad académica para estudiantes y docentes mediante convenios con universidades de América, Europa y Asia, así como oportunidades de intercambio académico, participación en redes regionales, pasantías nacionales e internacionales y programas conjuntos con instituciones de prestigio.  
+
+La Facultad de Ingeniería de la UNAH, ubicada en Ciudad Universitaria, es responsable del desarrollo de la ciencia y la tecnología en la rama de la ingeniería; para lo cual concentra todos sus esfuerzos y actividades en la docencia, la investigación, la extensión y la vinculación de la universidad con la sociedad. La Facultad participa en pasantías, congresos internacionales y en proyectos colaborativos en áreas como infraestructura, energía renovable, tecnología digital y sostenibilidad. 
+
+La carrera de Ingeniería en Sistemas en Ciudad Universitaria, ofrecida por la Facultad de Ingeniería de la UNAH, es una de las más demandadas y estratégicas en el contexto de la transformación digital del país. Esta carrera forma profesionales con sólidos conocimientos en desarrollo de software, redes, bases de datos, inteligencia artificial, ciberseguridad, arquitectura de sistemas y gestión de proyectos tecnológicos. 
+
+1.3 Definición del problema 
+1.3.1 Enunciado del problema  
+La carrera de Ingeniería en Sistemas de la UNAH, sede Ciudad Universitaria, atiende a 1362 estudiantes matriculados en el II PAC 2025. En la interacción cotidiana en los pasillos, grupos de estudio y aulas los mismos estudiantes reportan fatiga persistente, desmotivación repentina y bajo rendimiento académico, sin identificar con claridad el origen de estos síntomas. Durante los periodos recientes se percibe un incremento de tales manifestaciones; no obstante, no existe un mecanismo que permita determinar con precisión si tales signos corresponden al síndrome del burnout u obedecen a otros factores académicos o personales, de modo que la búsqueda de apoyo especializado se retrasa y la oferta de talleres o asesorías preventivas resulta insuficiente. 
+La ausencia de un protocolo de detección temprana y de una campaña formativa sobre el tema mantiene el problema invisibilizado y contribuye a que el agotamiento avance sin intervención oportuna, con efectos que se ven reflejados en abandono de asignaturas, entregas de proyectos finales de clase de baja calidad y conflictos emocionales como la depresión, ansiedad y desesperación especialmente durante las semanas con mayor concentración de exámenes y tareas. 
+Sin acciones sistemáticas que informen, orienten y acompañen al alumnado, los estudiantes corren el riesgo de arraigar a una cultura de sobrecarga y desgaste que termine normalizando la desmotivación y el bajo desempeño. 
+Por ello se plantea ofrecer lineamientos prácticos que ayuden a los estudiantes a reconocer tempranamente los indicios de burnout, diferenciarlos de la fatiga académica habitual y, en consecuencia, acudir oportunamente a los servicios de apoyo disponibles. De esta manera no solo se mitigará el impacto académico y psicoemocional, sino que también se proporcionará a la UNAH evidencia concreta para optimizar la carga de trabajo, fortalecer los programas de acompañamiento y alinear sus indicadores de éxito con las metas establecidas en el Plan Estratégico universitario. 
+1.3.2 Formulación del problema 
+¿Cómo influyen variables como la planificación académica, el uso de inteligencia artificial, las conductas de afrontamiento, el tiempo en pantalla, el conocimiento sobre el burnout, los síntomas físicos y emocionales, y el apoyo institucional en la aparición del síndrome de burnout en estudiantes de la carrera de Ingeniería en Sistemas (entre el 3er y 4to año de estudio) de Ciudad Universitaria de la UNAH? 
+1.3.3 Preguntas de investigación 
+¿Qué porcentaje de estudiantes de la carrera de Ingeniería en Sistemas de la UNAH, Ciudad Universitaria, ha presentado síntomas del síndrome de burnout al menos una vez durante su formación académica? 
+
+¿En qué etapa del período académica (primera vs segunda) se presenta con mayor frecuencia el síndrome de burnout entre los estudiantes de Ingeniería en Sistemas de la UNAH, en asignaturas intermedia como Programación Orientada a Objetos, Bases de Datos I y II, y Estructuras de Datos? 
+
+¿Existe una asociación entre el uso de estrategias de afrontamiento y la presencia de síntomas emocionales? 
+
+¿Existe una correlación entre la cantidad de proyectos asignados y el tiempo en pantalla? 
+
+¿El uso frecuente de IA para evitar el estrés académico causa un aumento en los síntomas de burnout (agotamiento emocional, despersonalización y baja realización personal) en estudiantes de Ingeniería en Sistemas (UNAH)? 
+
+¿Cuál es la influencia de la normalización del agotamiento en la decisión de no buscar ayuda profesional por parte de los estudiantes? 
+
+¿En qué semana del periodo académico los estudiantes que reportan alteraciones frecuentes del sueño presentan mayor probabilidad de desarrollar síntomas intensos de burnout al final del periodo? 
+
+Si se introducen talleres de planificación y mindfulness en distintas fechas, ¿en qué punto del periodo académico (semana 4, 9 o 12) la intervención reduce más la probabilidad de burnout severo al cierre de semestre? 
+
+1.4 Objetivos del proyecto 
+Objetivo General  
+Diseñar una propuesta tecnológica basada en el análisis de factores asociados al síndrome de burnout académico, orientada a mejorar el rendimiento y bienestar de los estudiantes de Ingeniería en Sistemas de Ciudad Universitaria de la UNAH. 
+Objetivos específicos  
+Identificar los principales síntomas del síndrome de burnout presentes en los estudiantes de Ingeniería en Sistemas de Ciudad Universitaria, así como los factores académicos y personales que contribuyen a su aparición. 
+Analizar cómo ciertos hábitos cotidianos y patrones de conducta de los estudiantes pueden estar asociados con el desarrollo del burnout y afectar su desempeño académico. 
+Evaluar el impacto potencial de estrategias de intervención como el asesoramiento académico, apoyo emocional y gestión del tiempo en la prevención del burnout entre estudiantes de Ingeniería en Sistemas. 
+1.5 Justificación 
+Los estudiantes no son entes aislados del entorno en el que se forman; su desempeño académico está profundamente influenciado por factores individuales, académicos y contextuales que interactúan constantemente. Durante mucho tiempo, el enfoque educativo estuvo centrado en los contenidos curriculares y en el cumplimiento de objetivos académicos colectivos; sin embargo, los desafíos actuales exigen una atención más personalizada, que reconozca las condiciones particulares que afectan el rendimiento y bienestar de cada estudiante. 
+En este escenario, el agotamiento académico o síndrome de burnout se presenta como una amenaza silenciosa que, al no ser atendida a tiempo, deteriora la calidad del proceso de formación profesional. Este fenómeno representa un reto tanto humano como tecnológico, ya que se requiere no solo de empatía institucional, sino también de herramientas de análisis avanzadas que permitan identificar patrones de riesgo y actuar de forma proactiva. 
+La evolución de la ciencia de datos y el acceso a tecnologías basadas en inteligencia artificial, aprendizaje automático y analítica predictiva abren una puerta de innovación para enfrentar este tipo de problemáticas con mayor precisión. La posibilidad de integrar variables académicas, personales y externas en modelos de evaluación inteligente permite detectar señales tempranas de burnout y diseñar estrategias de intervención más efectivas y contextualizadas. 
+En este sentido, el desarrollo de soluciones digitales que combinen conocimiento científico, análisis de datos y plataformas accesibles en la nube representa una oportunidad estratégica para que las universidades fortalezcan su capacidad de respuesta ante retos asociados al agotamiento académico.  
+La implementación de sistemas de monitoreo y apoyo emocional automatizado no solo ayuda a mejorar la experiencia estudiantil, sino que también contribuye a la permanencia académica, mejora la calidad de los egresados y favorece la alineación de los programas educativos con los estándares de bienestar institucional. 
+Para la UNAH, en particular para la carrera de Ingeniería en Sistemas de Ciudad Universitaria, abordar el síndrome de burnout desde una perspectiva tecnológica e investigativa no es solo una apuesta innovadora, sino también una responsabilidad ética. Esta propuesta representa una oportunidad concreta de transformar datos en decisiones, vulnerabilidad en acompañamiento y desgaste emocional en resiliencia estudiantil, consolidando así una comunidad académica más fuerte, informada y sostenible. 

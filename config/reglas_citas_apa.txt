@@ -1,0 +1,30 @@
+✍️ Citas en el Texto
+Citar correctamente es fundamental para evitar el plagio. En APA 7, se utiliza el sistema autor-fecha. Hay dos formas de hacerlo:
+
+Cita narrativa (basada en el autor): El nombre del autor se incorpora en la redacción y el año se pone entre paréntesis.
+
+Ejemplo: Según Sánchez (2020), el uso de la tecnología en el aula ha aumentado significativamente.
+
+Cita en paréntesis (basada en el texto): El apellido del autor y el año de publicación aparecen entre paréntesis al final de la frase.
+
+Ejemplo: El uso de la tecnología en el aula ha aumentado significativamente (Sánchez, 2020).
+
+Reglas según el número de autores:
+
+Número de Autores	Cita Narrativa	Cita en Paréntesis
+1 autor	Pérez (2021)	(Pérez, 2021)
+2 autores	López y García (2022)	(López & García, 2022)
+3 o más autores	Ramos et al. (2019)	(Ramos et al., 2019)
+Nota: Para 3 o más autores, se utiliza "et al." desde la primera cita.
+
+Citas textuales:
+
+Menos de 40 palabras: Se incorporan en el texto y se encierran entre comillas dobles. Debes incluir el autor, el año y el número de página (p.).
+
+Ejemplo: La investigación concluyó que "los resultados no fueron significativos" (Díaz, 2021, p. 45).
+
+40 palabras o más (cita en bloque): Se escribe en un párrafo aparte, sin comillas y con una sangría de 1.27 cm en todo el bloque. El punto final va antes del paréntesis de la cita.
+
+Ejemplo:
+
+La evidencia reciente sugiere una nueva aproximación al problema, considerando factores que antes eran ignorados por la comunidad científica. Este cambio de paradigma obliga a reevaluar los modelos teóricos existentes y proponer nuevas hipótesis. (Vargas, 2023, pp. 112-113)

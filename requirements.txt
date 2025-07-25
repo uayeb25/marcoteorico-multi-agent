@@ -1,0 +1,95 @@
+# =====================================================
+# Sistema Multiagente para Marco Teórico Académico
+# Dependencias principales del proyecto
+# =====================================================
+
+# === Core AI/ML Libraries ===
+langchain==0.3.26
+langchain-community>=0.3.0
+langchain-ollama>=0.2.0
+langgraph>=0.2.0
+
+# === Data Processing & Validation ===
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# === Vector Database & RAG ===
+chromadb>=0.5.0
+sentence-transformers>=2.2.0
+
+# === PDF Processing ===
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+pymupdf>=1.23.0
+
+# === LLM Integration ===
+ollama>=0.3.0
+
+# === Environment & Configuration ===
+python-dotenv>=1.0.0
+configparser>=5.3.0
+
+# === Data Science & Analysis ===
+numpy>=1.24.0
+pandas>=2.0.0
+
+# === Text Processing ===
+tiktoken>=0.5.0
+nltk>=3.8.0
+spacy>=3.7.0
+
+# === File System & Path Handling ===
+pathlib2>=2.3.0
+
+# === HTTP & API Requests ===
+requests>=2.31.0
+httpx>=0.24.0
+
+# === Async Support ===
+asyncio>=3.4.3
+aiofiles>=23.0.0
+
+# === JSON & Data Serialization ===
+jsonschema>=4.17.0
+orjson>=3.9.0
+
+# === Logging & Monitoring ===
+loguru>=0.7.0
+rich>=13.0.0
+tqdm>=4.65.0
+
+# === Date & Time Handling ===
+python-dateutil>=2.8.0
+
+# === Type Hints & Development ===
+typing-extensions>=4.5.0
+
+# === Optional: Advanced Features ===
+# Uncomment if needed for specific functionality
+
+# === OCR Support (optional) ===
+# pytesseract>=0.3.10
+# Pillow>=10.0.0
+
+# === Advanced NLP (optional) ===
+# transformers>=4.30.0
+# torch>=2.0.0
+
+# === Database Alternatives (optional) ===
+# faiss-cpu>=1.7.4
+# pinecone-client>=2.2.0
+
+# === API Integration (optional) ===
+# openai>=1.0.0
+# anthropic>=0.7.0
+
+# === Testing & Quality Assurance ===
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# === Documentation ===
+markdown>=3.5.0
+mdx-include>=1.4.0
