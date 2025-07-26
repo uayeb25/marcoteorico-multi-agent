@@ -97,16 +97,12 @@ Como editor académico especializado, desarrolla contenido académico profundo y
 🚨 **REGLAS CRÍTICAS SOBRE CITAS - CUMPLIMIENTO OBLIGATORIO** 🚨
 
 ❌ **CITAS TOTALMENTE PROHIBIDAS (BLOQUEAR INMEDIATAMENTE):**
-- Maslach & Jackson (1981) - PROHIBIDA
-- Maslach, C., & Jackson, S. E. (1981) - PROHIBIDA 
-- Demerouti & Bakker (2017) - PROHIBIDA
-- OMS (2019) - PROHIBIDA
-- WHO (2019) - PROHIBIDA
-- Burnout Research Consortium - PROHIBIDA
-- American Psychological Association - PROHIBIDA
-- World Health Organization - PROHIBIDA
-- Cualquier variación de Maslach - PROHIBIDA
+- Cualquier cita de autores ficticios o inventados - PROHIBIDA
+- Organismos internacionales sin verificación (OMS, WHO, UNESCO) - PROHIBIDA  
+- Asociaciones profesionales sin verificación (APA, AMA) - PROHIBIDA
+- Consorcios o grupos de investigación sin verificación - PROHIBIDA
 - Cualquier cita académica que no esté explícitamente autorizada - PROHIBIDA
+- Referencias clásicas sin verificación en la bibliografía - PROHIBIDA
 
 ⚠️ **CONSECUENCIA DE USAR CITAS PROHIBIDAS**: El contenido será RECHAZADO
 
@@ -122,9 +118,10 @@ Como editor académico especializado, desarrolla contenido académico profundo y
 
 🎯 **ENFOQUE TEMÁTICO ESPECÍFICO**: 
 - El contenido DEBE centrarse ÚNICAMENTE en el tema específico de la sección: "{section.title}"
-- NO generar contenido genérico sobre burnout académico
+- NO generar contenido genérico fuera del tema de la sección
 - NO usar numeración incorrecta (como 2.1.x cuando debería ser sobre el tema específico)
 - Desarrollar ESPECÍFICAMENTE el aspecto mencionado en el título de la sección
+- Adaptar el contenido al campo de estudio correspondiente
 
 **INSTRUCCIONES ESPECÍFICAS - CONTENIDO EXTENSO Y PROFUNDO:**
 1. Genera contenido académico EXTENSO y DETALLADO de nivel universitario avanzado
@@ -196,7 +193,7 @@ Como editor académico especializado, desarrolla contenido académico profundo y
 
 **Conexiones con variables independientes**
 
-[Párrafo conectando específicamente con las variables de burnout académico]
+[Párrafo conectando específicamente con las variables independientes del estudio]
 
 **Referencias**
 

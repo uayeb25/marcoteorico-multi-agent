@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Multiagente: Marco Teórico Automático</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-controls">
+                <button id="prevBtn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <span id="slideNumber">1 / 15</span>
+                <button id="nextBtn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </nav>
+
+        <!-- Slides Container -->
+        <div class="slides-container" id="slidesContainer">
+            
+            <!-- Slide 1: Título -->
+            <div class="slide active" data-slide="1">
+                <div class="slide-content title-slide">
+                    <h1><i class="fas fa-robot"></i> Sistemas Multiagente</h1>
+                    <h2>Generación Automática de Marco Teórico Académico</h2>
+                    <div class="subtitle">
+                        <p>Una guía completa para construir sistemas inteligentes con múltiples agentes especializados</p>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Ollama</span>
+                        <span class="tech-badge">RAG</span>
+                        <span class="tech-badge">ChromaDB</span>
+                        <span class="tech-badge">LangChain</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: ¿Qué es un Sistema Multiagente? -->
+            <div class="slide" data-slide="2">
+                <div class="slide-content">
+                    <h2><i class="fas fa-users"></i> ¿Qué es un Sistema Multiagente?</h2>
+                    <div class="concept-grid">
+                        <div class="concept-card">
+                            <div class="concept-icon"><i class="fas fa-brain"></i></div>
+                            <h3>Agentes Autónomos</h3>
+                            <p>Cada agente tiene una función específica y puede tomar decisiones independientes</p>
+                        </div>
+                        <div class="concept-card">
+                            <div class="concept-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>Colaboración</h3>
+                            <p>Los agentes trabajan juntos hacia un objetivo común</p>
+                        </div>
+                        <div class="concept-card">
+                            <div class="concept-icon"><i class="fas fa-cogs"></i></div>
+                            <h3>Especialización</h3>
+                            <p>Cada agente se especializa en una tarea específica</p>
+                        </div>
+                        <div class="concept-card">
+                            <div class="concept-icon"><i class="fas fa-sync-alt"></i></div>
+                            <h3>Comunicación</h3>
+                            <p>Intercambian información y coordinan acciones</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Arquitectura del Sistema -->
+            <div class="slide" data-slide="3">
+                <div class="slide-content">
+                    <h2><i class="fas fa-sitemap"></i> Arquitectura del Sistema</h2>
+                    <div class="architecture-diagram">
+                        <div class="layer layer-user">
+                            <h3><i class="fas fa-user"></i> Usuario</h3>
+                            <p>Solicita generación de sección específica</p>
+                        </div>
+                        <div class="layer layer-workflow">
+                            <h3><i class="fas fa-project-diagram"></i> Workflow Multiagente</h3>
+                            <p>Coordina la colaboración entre agentes</p>
+                        </div>
+                        <div class="layer layer-agents">
+                            <h3><i class="fas fa-users-cog"></i> Agentes Especializados</h3>
+                            <div class="agents-grid">
+                                <span class="agent">Investigador</span>
+                                <span class="agent">Editor Fondo</span>
+                                <span class="agent">Redactor Forma</span>
+                                <span class="agent">Supervisor</span>
+                            </div>
+                        </div>
+                        <div class="layer layer-data">
+                            <h3><i class="fas fa-database"></i> Capa de Datos</h3>
+                            <div class="data-sources">
+                                <span class="data-source">RAG System</span>
+                                <span class="data-source">ChromaDB</span>
+                                <span class="data-source">PDFs</span>
+                            </div>
+                        </div>
+                        <div class="layer layer-llm">
+                            <h3><i class="fas fa-robot"></i> Modelo LLM</h3>
+                            <p>Gemma2 27B (Local via Ollama)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Los 4 Agentes Especializados -->
+            <div class="slide" data-slide="4">
+                <div class="slide-content">
+                    <h2><i class="fas fa-users-cog"></i> Los 4 Agentes Especializados</h2>
+                    <div class="agents-detailed">
+                        <div class="agent-card investigador">
+                            <div class="agent-header">
+                                <i class="fas fa-search"></i>
+                                <h3>Investigador</h3>
+                            </div>
+                            <ul>
+                                <li>Analiza bibliografía PDF</li>
+                                <li>Extrae contenido relevante</li>
+                                <li>Identifica variables independientes</li>
+                                <li>Genera contexto académico</li>
+                            </ul>
+                        </div>
+                        <div class="agent-card editor-fondo">
+                            <div class="agent-header">
+                                <i class="fas fa-edit"></i>
+                                <h3>Editor de Fondo</h3>
+                            </div>
+                            <ul>
+                                <li>Genera contenido académico sustantivo</li>
+                                <li>800-1200 palabras por sección</li>
+                                <li>Conecta con variables independientes</li>
+                                <li>Desarrollo teórico profundo</li>
+                            </ul>
+                        </div>
+                        <div class="agent-card redactor-forma">
+                            <div class="agent-header">
+                                <i class="fas fa-pen-nib"></i>
+                                <h3>Redactor de Forma</h3>
+                            </div>
+                            <ul>
+                                <li>Aplica formato APA</li>
+                                <li>Estructura académica profesional</li>
+                                <li>Revisa estilo y coherencia</li>
+                                <li>Genera tablas y referencias</li>
+                            </ul>
+                        </div>
+                        <div class="agent-card supervisor">
+                            <div class="agent-header">
+                                <i class="fas fa-clipboard-check"></i>
+                                <h3>Supervisor</h3>
+                            </div>
+                            <ul>
+                                <li>Control de calidad académica</li>
+                                <li>Valida coherencia narrativa</li>
+                                <li>Verificación final</li>
+                                <li>Puntuación de calidad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Sistema RAG -->
+            <div class="slide" data-slide="5">
+                <div class="slide-content">
+                    <h2><i class="fas fa-database"></i> Sistema RAG (Retrieval-Augmented Generation)</h2>
+                    <div class="rag-flow">
+                        <div class="rag-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3><i class="fas fa-file-pdf"></i> Procesamiento</h3>
+                                <p>PDFs → Chunks de texto</p>
+                            </div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="rag-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3><i class="fas fa-vector-square"></i> Embeddings</h3>
+                                <p>Texto → Vectores numéricos</p>
+                            </div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="rag-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3><i class="fas fa-database"></i> ChromaDB</h3>
+                                <p>Almacena vectores</p>
+                            </div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="rag-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3><i class="fas fa-search"></i> Búsqueda</h3>
+                                <p>Encuentra contenido relevante</p>
+                            </div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="rag-step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h3><i class="fas fa-robot"></i> Generación</h3>
+                                <p>LLM + Contexto → Respuesta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rag-benefits">
+                        <h3>Beneficios del RAG:</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Información específica y relevante</li>
+                            <li><i class="fas fa-check"></i> Reduce alucinaciones del LLM</li>
+                            <li><i class="fas fa-check"></i> Conocimiento actualizable</li>
+                            <li><i class="fas fa-check"></i> Citas verificables</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Flujo de Trabajo -->
+            <div class="slide" data-slide="6">
+                <div class="slide-content">
+                    <h2><i class="fas fa-project-diagram"></i> Flujo de Trabajo Multiagente</h2>
+                    <div class="workflow-diagram">
+                        <div class="workflow-step active-step">
+                            <div class="step-circle">1</div>
+                            <div class="step-info">
+                                <h4>Solicitud Usuario</h4>
+                                <p><code>python generar.py section 2.1</code></p>
+                            </div>
+                        </div>
+                        <div class="workflow-arrow">↓</div>
+                        <div class="workflow-step">
+                            <div class="step-circle">2</div>
+                            <div class="step-info">
+                                <h4>Agente Investigador</h4>
+                                <p>Busca y analiza bibliografía relevante</p>
+                            </div>
+                        </div>
+                        <div class="workflow-arrow">↓</div>
+                        <div class="workflow-step">
+                            <div class="step-circle">3</div>
+                            <div class="step-info">
+                                <h4>Editor de Fondo</h4>
+                                <p>Genera contenido académico sustantivo</p>
+                            </div>
+                        </div>
+                        <div class="workflow-arrow">↓</div>
+                        <div class="workflow-step">
+                            <div class="step-circle">4</div>
+                            <div class="step-info">
+                                <h4>Redactor de Forma</h4>
+                                <p>Aplica formato APA y estructura</p>
+                            </div>
+                        </div>
+                        <div class="workflow-arrow">↓</div>
+                        <div class="workflow-step">
+                            <div class="step-circle">5</div>
+                            <div class="step-info">
+                                <h4>Supervisor</h4>
+                                <p>Valida calidad y coherencia</p>
+                            </div>
+                        </div>
+                        <div class="workflow-arrow">↓</div>
+                        <div class="workflow-step">
+                            <div class="step-circle">6</div>
+                            <div class="step-info">
+                                <h4>Resultado Final</h4>
+                                <p>Marco teórico generado en <code>outputs/</code></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Implementación de Agentes -->
+            <div class="slide" data-slide="7">
+                <div class="slide-content">
+                    <h2><i class="fas fa-code"></i> Implementación de Agentes</h2>
+                    <div class="code-section">
+                        <h3>Estructura Base de un Agente</h3>
+                        <pre><code class="language-python">class BaseAgent:
+    def __init__(self, role: AgentRole, ollama_config: dict):
+        self.role = role
+        self.llm = self._setup_llm(ollama_config)
+        self.chat_history = []
+    
+    def _setup_llm(self, config):
+        return ChatOllama(
+            model=config["model"],        # "gemma2:27b"
+            temperature=config["temperature"],
+            max_tokens=config["max_tokens"]
+        )
+    
+    async def process(self, input_data: dict) -> dict:
+        # Lógica específica del agente
+        prompt = self._build_prompt(input_data)
+        response = await self.llm.agenerate([prompt])
+        return self._parse_response(response)
+    
+    def _build_prompt(self, data) -> str:
+        # Construye prompt específico del agente
+        pass
+    
+    def _parse_response(self, response) -> dict:
+        # Procesa la respuesta del LLM
+        pass</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Agente Investigador - Código -->
+            <div class="slide" data-slide="8">
+                <div class="slide-content">
+                    <h2><i class="fas fa-search"></i> Agente Investigador - Implementación</h2>
+                    <div class="code-section">
+                        <pre><code class="language-python">class InvestigadorAgent(BaseAgent):
+    def __init__(self, rag_system, variables_independientes):
+        super().__init__(AgentRole.INVESTIGADOR, AGENT_CONFIG["investigador"])
+        self.rag_system = rag_system
+        self.variables = variables_independientes
+    
+    async def investigar_seccion(self, seccion_info: dict) -> dict:
+        # 1. Buscar contenido relevante en RAG
+        query = f"{seccion_info['title']} {' '.join(self.variables)}"
+        fuentes = await self.rag_system.search_relevant_content(
+            query, k=15, score_threshold=0.7
+        )
+        
+        # 2. Construir prompt con contexto
+        prompt = self._build_investigation_prompt(seccion_info, fuentes)
+        
+        # 3. Generar análisis
+        response = await self.llm.agenerate([prompt])
+        
+        # 4. Procesar resultados
+        return {
+            "fuentes_encontradas": len(fuentes),
+            "contenido_relevante": response.generations[0][0].text,
+            "variables_identificadas": self._extract_variables(response),
+            "calidad_fuentes": self._evaluate_sources(fuentes)
+        }
+    
+    def _build_investigation_prompt(self, seccion, fuentes):
+        return f"""
+        Analiza la siguiente sección académica: {seccion['title']}
+        
+        Variables independientes a considerar: {self.variables}
+        
+        Fuentes disponibles:
+        {self._format_sources(fuentes)}
+        
+        Genera un análisis académico que:
+        1. Identifique conceptos clave
+        2. Conecte con las variables independientes
+        3. Extraiga citas relevantes
+        4. Proporcione contexto teórico
+        """</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Sistema de Comunicación -->
+            <div class="slide" data-slide="9">
+                <div class="slide-content">
+                    <h2><i class="fas fa-comments"></i> Comunicación Entre Agentes</h2>
+                    <div class="communication-diagram">
+                        <div class="agent-comm investigador-comm">
+                            <h4><i class="fas fa-search"></i> Investigador</h4>
+                            <div class="output-data">
+                                <h5>Salida:</h5>
+                                <ul>
+                                    <li>fuentes_encontradas: 15</li>
+                                    <li>contenido_relevante</li>
+                                    <li>variables_identificadas</li>
+                                    <li>calidad_fuentes: 8.5/10</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="arrow-right">→</div>
+                        
+                        <div class="agent-comm editor-comm">
+                            <h4><i class="fas fa-edit"></i> Editor Fondo</h4>
+                            <div class="input-data">
+                                <h5>Entrada:</h5>
+                                <ul>
+                                    <li>contexto_investigacion</li>
+                                    <li>fuentes_relevantes</li>
+                                    <li>variables_objetivo</li>
+                                </ul>
+                            </div>
+                            <div class="output-data">
+                                <h5>Salida:</h5>
+                                <ul>
+                                    <li>contenido_generado</li>
+                                    <li>palabras: 847</li>
+                                    <li>referencias_utilizadas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="arrow-right">→</div>
+                        
+                        <div class="agent-comm redactor-comm">
+                            <h4><i class="fas fa-pen-nib"></i> Redactor</h4>
+                            <div class="output-data">
+                                <h5>Salida:</h5>
+                                <ul>
+                                    <li>contenido_formateado</li>
+                                    <li>formato: APA</li>
+                                    <li>estructura_profesional</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="code-section">
+                        <h3>Protocolo de Comunicación</h3>
+                        <pre><code class="language-python">class MultiAgentWorkflow:
+    async def execute_workflow(self, seccion_info):
+        # 1. Investigación
+        investigacion = await self.investigador.investigar_seccion(seccion_info)
+        
+        # 2. Generación de contenido
+        contenido = await self.editor_fondo.generar_contenido({
+            "seccion": seccion_info,
+            "investigacion": investigacion,
+            "variables": self.variables_independientes
+        })
+        
+        # 3. Formato y estilo
+        formateado = await self.redactor_forma.formatear_contenido({
+            "contenido_raw": contenido,
+            "estilo": "APA",
+            "estructura": seccion_info
+        })
+        
+        # 4. Supervisión final
+        resultado = await self.supervisor.validar_calidad({
+            "contenido": formateado,
+            "criterios": self.criterios_calidad
+        })
+        
+        return resultado</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: ChromaDB y Vectores -->
+            <div class="slide" data-slide="10">
+                <div class="slide-content">
+                    <h2><i class="fas fa-database"></i> ChromaDB: Base de Datos Vectorial</h2>
+                    <div class="vector-explanation">
+                        <div class="vector-concept">
+                            <h3>¿Qué son los Vectores?</h3>
+                            <div class="vector-example">
+                                <p><strong>Texto:</strong> "inteligencia artificial"</p>
+                                <p><strong>Vector:</strong> [0.2, -0.1, 0.8, 0.3, ...] (384 dimensiones)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="similarity-demo">
+                            <h3>Búsqueda por Similitud</h3>
+                            <div class="similarity-example">
+                                <div class="query-vector">
+                                    <h4>Query: "machine learning"</h4>
+                                    <div class="vector">[0.3, -0.2, 0.7, 0.4, ...]</div>
+                                </div>
+                                <div class="similar-docs">
+                                    <h4>Documentos Similares:</h4>
+                                    <div class="doc-result">
+                                        <span class="similarity">95%</span>
+                                        <span class="text">"aprendizaje automático"</span>
+                                    </div>
+                                    <div class="doc-result">
+                                        <span class="similarity">87%</span>
+                                        <span class="text">"algoritmos de IA"</span>
+                                    </div>
+                                    <div class="doc-result">
+                                        <span class="similarity">73%</span>
+                                        <span class="text">"redes neuronales"</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="code-section">
+                        <h3>Implementación ChromaDB</h3>
+                        <pre><code class="language-python">class RAGSystem:
+    def __init__(self, persist_directory: str):
+        self.embeddings = OllamaEmbeddings(model="nomic-embed-text")
+        self.vectorstore = Chroma(
+            persist_directory=persist_directory,
+            embedding_function=self.embeddings,
+            collection_name="bibliografia_collection"
+        )
+    
+    async def add_documents(self, pdf_paths: List[str]):
+        documents = []
+        for pdf_path in pdf_paths:
+            # Procesar PDF
+            text_chunks = self._process_pdf(pdf_path)
+            documents.extend(text_chunks)
+        
+        # Agregar a ChromaDB
+        self.vectorstore.add_documents(documents)
+    
+    async def search_relevant_content(self, query: str, k: int = 10):
+        # Búsqueda semántica
+        results = self.vectorstore.similarity_search_with_score(
+            query, k=k
+        )
+        return [doc for doc, score in results if score > 0.7]</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Ollama y Modelos Locales -->
+            <div class="slide" data-slide="11">
+                <div class="slide-content">
+                    <h2><i class="fas fa-robot"></i> Ollama: LLMs Locales</h2>
+                    <div class="ollama-benefits">
+                        <div class="benefit-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Privacidad</h3>
+                            <p>Datos no salen de tu servidor</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-dollar-sign"></i>
+                            <h3>Sin Costos API</h3>
+                            <p>No pagas por tokens</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h3>Velocidad</h3>
+                            <p>~1.4 segundos por respuesta</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-cog"></i>
+                            <h3>Control Total</h3>
+                            <p>Personalización completa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="model-comparison">
+                        <h3>Comparación de Modelos</h3>
+                        <table class="model-table">
+                            <thead>
+                                <tr>
+                                    <th>Modelo</th>
+                                    <th>Tamaño</th>
+                                    <th>RAM Requerida</th>
+                                    <th>Calidad</th>
+                                    <th>Velocidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>llama3.2:latest</td>
+                                    <td>2GB</td>
+                                    <td>4GB</td>
+                                    <td>⭐⭐⭐</td>
+                                    <td>⚡⚡⚡</td>
+                                </tr>
+                                <tr class="highlighted">
+                                    <td>gemma2:27b</td>
+                                    <td>15GB</td>
+                                    <td>32GB</td>
+                                    <td>⭐⭐⭐⭐⭐</td>
+                                    <td>⚡⚡</td>
+                                </tr>
+                                <tr>
+                                    <td>mistral:7b</td>
+                                    <td>4GB</td>
+                                    <td>8GB</td>
+                                    <td>⭐⭐⭐⭐</td>
+                                    <td>⚡⚡⚡</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="code-section">
+                        <h3>Configuración Ollama</h3>
+                        <pre><code class="language-python">OLLAMA_CONFIG = {
+    "model": "gemma2:27b",
+    "base_url": "http://localhost:11434",
+    "temperature": 0.3,    # Creatividad controlada
+    "top_p": 0.9,
+    "max_tokens": 4096     # Contenido extenso
+}
+
+class ChatOllamaLocal:
+    def __init__(self, config):
+        self.client = ChatOllama(
+            model=config["model"],
+            base_url=config["base_url"],
+            temperature=config["temperature"],
+            max_tokens=config["max_tokens"]
+        )</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 12: Configuración y Personalización -->
+            <div class="slide" data-slide="12">
+                <div class="slide-content">
+                    <h2><i class="fas fa-cogs"></i> Configuración y Personalización</h2>
+                    <div class="config-sections">
+                        <div class="config-card">
+                            <h3><i class="fas fa-list"></i> Variables Independientes</h3>
+                            <pre><code class="language-python"># config.py - Totalmente personalizable
+VARIABLES_INDEPENDIENTES = [
+    "Variable principal de estudio",
+    "Variable contextual",
+    "Variable de proceso",
+    "Factores moderadores",
+    "Factores mediadores"
+]
+
+# Ejemplos por disciplina:
+# Tecnología Educativa
+VARIABLES_INDEPENDIENTES = [
+    "Tecnologías emergentes",
+    "Competencias digitales",
+    "Engagement estudiantil",
+    "Metodologías innovadoras"
+]
+
+# Psicología
+VARIABLES_INDEPENDIENTES = [
+    "Burnout académico",
+    "Estrés académico", 
+    "Salud mental universitaria"
+]</code></pre>
+                        </div>
+                        
+                        <div class="config-card">
+                            <h3><i class="fas fa-file-alt"></i> Estructura del Marco</h3>
+                            <pre><code class="language-text"># config/indice.txt
+2.1 Marco Conceptual
+2.1.1 Definiciones Básicas
+2.1.2 Teorías Fundamentales
+2.2 Antecedentes Empíricos
+2.2.1 Estudios Nacionales
+2.2.2 Estudios Internacionales
+2.3 Variables de Estudio
+2.3.1 Variable Dependiente
+2.3.2 Variables Independientes</code></pre>
+                        </div>
+                        
+                        <div class="config-card">
+                            <h3><i class="fas fa-robot"></i> Configuración de Agentes</h3>
+                            <pre><code class="language-python">AGENT_CONFIG = {
+    "investigador": {
+        "temperature": 0.2,      # Precisión
+        "max_tokens": 4096
+    },
+    "editor_fondo": {
+        "temperature": 0.4,      # Creatividad
+        "max_tokens": 4096
+    },
+    "redactor_forma": {
+        "temperature": 0.3,      # Consistencia
+        "max_tokens": 4096
+    },
+    "supervisor": {
+        "temperature": 0.2,      # Rigor
+        "max_tokens": 4096
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 13: Casos de Uso -->
+            <div class="slide" data-slide="13">
+                <div class="slide-content">
+                    <h2><i class="fas fa-lightbulb"></i> Casos de Uso del Sistema</h2>
+                    <div class="use-cases">
+                        <div class="use-case-card academic">
+                            <div class="use-case-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3>Investigación Académica</h3>
+                            <ul>
+                                <li>Generación automática de marcos teóricos</li>
+                                <li>Revisiones sistemáticas de literatura</li>
+                                <li>Análisis de antecedentes empíricos</li>
+                                <li>Síntesis de múltiples fuentes académicas</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="use-case-card business">
+                            <div class="use-case-icon"><i class="fas fa-briefcase"></i></div>
+                            <h3>Consultoría Empresarial</h3>
+                            <ul>
+                                <li>Análisis de tendencias de mercado</li>
+                                <li>Reportes de investigación sectorial</li>
+                                <li>Documentos de estado del arte</li>
+                                <li>Análisis competitivo automatizado</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="use-case-card legal">
+                            <div class="use-case-icon"><i class="fas fa-balance-scale"></i></div>
+                            <h3>Análisis Legal</h3>
+                            <ul>
+                                <li>Revisión de precedentes legales</li>
+                                <li>Análisis de jurisprudencia</li>
+                                <li>Síntesis de marcos normativos</li>
+                                <li>Documentos de compliance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="use-case-card medical">
+                            <div class="use-case-icon"><i class="fas fa-heartbeat"></i></div>
+                            <h3>Investigación Médica</h3>
+                            <ul>
+                                <li>Revisiones de literatura médica</li>
+                                <li>Análisis de protocolos clínicos</li>
+                                <li>Síntesis de evidencia científica</li>
+                                <li>Marcos teóricos en salud</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 14: Ventajas y Limitaciones -->
+            <div class="slide" data-slide="14">
+                <div class="slide-content">
+                    <h2><i class="fas fa-chart-line"></i> Ventajas y Limitaciones</h2>
+                    <div class="pros-cons">
+                        <div class="pros">
+                            <h3><i class="fas fa-thumbs-up"></i> Ventajas</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> <strong>Automatización:</strong> Reduce tiempo de investigación de semanas a horas</li>
+                                <li><i class="fas fa-check"></i> <strong>Calidad:</strong> Contenido académico profesional y estructurado</li>
+                                <li><i class="fas fa-check"></i> <strong>Consistencia:</strong> Formato APA y estilo homogéneo</li>
+                                <li><i class="fas fa-check"></i> <strong>Escalabilidad:</strong> Procesa grandes volúmenes de bibliografía</li>
+                                <li><i class="fas fa-check"></i> <strong>Personalizable:</strong> Adaptable a cualquier disciplina</li>
+                                <li><i class="fas fa-check"></i> <strong>Local:</strong> Privacidad y control total de datos</li>
+                                <li><i class="fas fa-check"></i> <strong>Sin costos:</strong> No requiere APIs externas</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="cons">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Limitaciones</h3>
+                            <ul>
+                                <li><i class="fas fa-times"></i> <strong>Hardware:</strong> Requiere recursos computacionales significativos</li>
+                                <li><i class="fas fa-times"></i> <strong>Configuración inicial:</strong> Setup complejo de modelos locales</li>
+                                <li><i class="fas fa-times"></i> <strong>Dependencia de fuentes:</strong> Calidad limitada por bibliografía disponible</li>
+                                <li><i class="fas fa-times"></i> <strong>Revisión humana:</strong> Requiere validación por expertos</li>
+                                <li><i class="fas fa-times"></i> <strong>Actualización:</strong> Modelos y conocimiento pueden quedar obsoletos</li>
+                                <li><i class="fas fa-times"></i> <strong>Especialización:</strong> Puede requerir ajustes por dominio</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="requirements">
+                        <h3><i class="fas fa-server"></i> Requisitos Técnicos</h3>
+                        <div class="req-grid">
+                            <div class="req-item">
+                                <i class="fas fa-memory"></i>
+                                <h4>RAM</h4>
+                                <p>32GB+ recomendado<br><small>16GB mínimo</small></p>
+                            </div>
+                            <div class="req-item">
+                                <i class="fas fa-hdd"></i>
+                                <h4>Almacenamiento</h4>
+                                <p>50GB libres<br><small>Modelos + datos</small></p>
+                            </div>
+                            <div class="req-item">
+                                <i class="fas fa-microchip"></i>
+                                <h4>Procesador</h4>
+                                <p>Multicores<br><small>M4 Max ideal</small></p>
+                            </div>
+                            <div class="req-item">
+                                <i class="fas fa-code"></i>
+                                <h4>Software</h4>
+                                <p>Python 3.8+<br><small>Ollama + deps</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 15: Próximos Pasos -->
+            <div class="slide" data-slide="15">
+                <div class="slide-content">
+                    <h2><i class="fas fa-rocket"></i> Próximos Pasos y Futuro</h2>
+                    <div class="next-steps">
+                        <div class="step-category immediate">
+                            <h3><i class="fas fa-play"></i> Implementación Inmediata</h3>
+                            <ol>
+                                <li>Instalar Ollama y descargar modelo</li>
+                                <li>Configurar variables independientes</li>
+                                <li>Agregar bibliografía específica</li>
+                                <li>Ejecutar primera generación</li>
+                                <li>Iterar y refinar configuración</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="step-category advanced">
+                            <h3><i class="fas fa-cogs"></i> Mejoras Avanzadas</h3>
+                            <ul>
+                                <li>Integración con GPT-4o para comparación</li>
+                                <li>Sistema de métricas de calidad automáticas</li>
+                                <li>Interface web para uso no-técnico</li>
+                                <li>Pipeline CI/CD para actualización automática</li>
+                                <li>Integración con gestores de referencias (Zotero, Mendeley)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="step-category future">
+                            <h3><i class="fas fa-crystal-ball"></i> Visión Futura</h3>
+                            <ul>
+                                <li><strong>Multimodalidad:</strong> Procesamiento de imágenes, gráficos, tablas</li>
+                                <li><strong>Agentes especializados:</strong> Por disciplina académica</li>
+                                <li><strong>Colaboración:</strong> Múltiples investigadores simultáneos</li>
+                                <li><strong>Validación automática:</strong> Fact-checking y verificación</li>
+                                <li><strong>Publicación directa:</strong> Integración con journals</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="final-cta">
+                        <h3><i class="fas fa-terminal"></i> ¡Comienza Ahora!</h3>
+                        <div class="command-box">
+                            <code>git clone &lt;repo-url&gt;</code><br>
+                            <code>pip install -r requirements.txt</code><br>
+                            <code>ollama pull gemma2:27b</code><br>
+                            <code>python generar.py section 2.1</code>
+                        </div>
+                        <p class="cta-text">
+                            <strong>Transforma tu proceso de investigación académica</strong><br>
+                            De semanas de trabajo manual a horas de generación automática
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -31,14 +31,24 @@ PATHS = {
     "data": "./data"
 }
 
-# Variables independientes de la problemática
+# Variables independientes de la problemática (configurables según el tema de investigación)
+# NOTA: Personalizar estas variables según tu tema de investigación específico
 VARIABLES_INDEPENDIENTES = [
-    "Burnout académico",
-    "Estrés académico", 
-    "Salud mental universitaria",
-    "Factores individuales y conductuales",
-    "Rendimiento y bienestar estudiantil"
+    "Variable principal de estudio",
+    "Variable contextual", 
+    "Variable de proceso",
+    "Factores moderadores",
+    "Factores mediadores"
 ]
+
+# Ejemplo para burnout académico (comentado para referencia):
+# VARIABLES_INDEPENDIENTES = [
+#     "Burnout académico",
+#     "Estrés académico", 
+#     "Salud mental universitaria",
+#     "Factores individuales y conductuales",
+#     "Rendimiento y bienestar estudiantil"
+# ]
 
 # Configuración de agentes
 AGENT_CONFIG = {

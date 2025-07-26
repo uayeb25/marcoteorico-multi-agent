@@ -272,14 +272,51 @@ python generar.py section 2.1 --force-reprocess
 
 ## 📝 Personalización
 
+### Personalización
+
 ### Variables de Investigación
 
-Modifica `VARIABLES_INDEPENDIENTES` en `config.py`:
+El sistema es **completamente generalizable** para cualquier tema de investigación. Modifica `VARIABLES_INDEPENDIENTES` en `config.py`:
+
 ```python
+# Para cualquier tema de investigación
 VARIABLES_INDEPENDIENTES = [
-    "Estrés laboral",
-    "Satisfacción profesional",
-    "Rendimiento organizacional"
+    "Tu variable principal",
+    "Tu variable contextual",
+    "Tu variable de proceso",
+    "Factores moderadores específicos",
+    "Factores mediadores específicos"
+]
+```
+
+**Ejemplos por disciplina:**
+
+```python
+# Tecnología Educativa
+VARIABLES_INDEPENDIENTES = [
+    "Tecnologías emergentes en educación",
+    "Competencias digitales docentes", 
+    "Engagement estudiantil digital",
+    "Metodologías pedagógicas innovadoras",
+    "Resultados de aprendizaje"
+]
+
+# Gestión Organizacional  
+VARIABLES_INDEPENDIENTES = [
+    "Liderazgo transformacional",
+    "Cultura organizacional",
+    "Clima laboral", 
+    "Performance organizacional",
+    "Factores de cambio organizacional"
+]
+
+# Psicología/Salud Mental
+VARIABLES_INDEPENDIENTES = [
+    "Burnout académico",
+    "Estrés académico",
+    "Salud mental universitaria", 
+    "Factores individuales y conductuales",
+    "Rendimiento y bienestar estudiantil"
 ]
 ```
 

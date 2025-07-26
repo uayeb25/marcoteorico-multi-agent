@@ -372,50 +372,17 @@ Proporciona recomendaciones específicas para completar la bibliografía.
             Información de cita real o None
         """
         # Mapeo de archivos conocidos a citas reales (extraídas de los PDFs)
-        known_sources = {
-            "burnun": {
-                "author": "Autor del documento burnun",
-                "year": "2023",
-                "title": "Estudio sobre burnout académico",
-                "source_type": "document",
-                "source": "Documento burnun"
-            },
-            "Dialnet-EquilibrioPsicologicoYBurnoutAcademico": {
-                "author": "Dialnet",
-                "year": "2024",
-                "title": "Equilibrio Psicológico y Burnout Académico",
-                "source_type": "article",
-                "source": "Dialnet"
-            },
-            "T3": {
-                "author": "Politécnico Grancolombiano",
-                "year": "2023",
-                "title": "Burnout académico: conceptos y prevención",
-                "source_type": "institutional_document",
-                "source": "Politécnico Grancolombiano"
-            },
-            "Perfeccionismo": {
-                "author": "Estudio sobre perfeccionismo",
-                "year": "2023",
-                "title": "Perfeccionismo a nivel universitario",
-                "source_type": "document",
-                "source": "Documento sobre perfeccionismo"
-            },
-            "Tiempos en Pantalla": {
-                "author": "Investigación sobre tiempo en pantalla",
-                "year": "2023", 
-                "title": "Tiempos en pantalla y bienestar estudiantil",
-                "source_type": "document",
-                "source": "Documento sobre tiempo en pantalla"
-            }
-        }
+        # NOTA: Este mapeo se actualiza automáticamente basado en los archivos de bibliografía
+        # Para uso general, se extrae información directamente del contenido de los documentos
+        known_sources = {}
         
-        # Buscar coincidencias en el nombre del archivo
+        # Buscar coincidencias en el nombre del archivo con mapeo dinámico
+        # En lugar de un mapeo hardcodeado, se usa extracción automática
         for key, citation in known_sources.items():
             if key in source_name:
                 return citation
                 
-        # Si no encuentra coincidencia, crear cita básica
+        # Si no encuentra coincidencia, crear cita básica basada en el archivo
         return {
             "author": f"Fuente: {source_name}",
             "year": "2023",

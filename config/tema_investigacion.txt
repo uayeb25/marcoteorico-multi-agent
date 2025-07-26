@@ -1,0 +1,39 @@
+# Configuración del Tema de Investigación
+# =====================================
+
+# PERSONALIZAR SEGÚN TU INVESTIGACIÓN ESPECÍFICA
+
+## Variables Independientes de tu Estudio
+# Edita estas variables según tu tema específico:
+Variable principal de estudio
+Variable contextual
+Variable de proceso
+Factores moderadores
+Factores mediadores
+
+## Ejemplo para Burnout Académico (REFERENCIA)
+# Burnout académico
+# Estrés académico
+# Salud mental universitaria
+# Factores individuales y conductuales
+# Rendimiento y bienestar estudiantil
+
+## Ejemplo para Tecnología Educativa (REFERENCIA)
+# Tecnologías emergentes en educación
+# Competencias digitales docentes
+# Engagement estudiantil digital
+# Metodologías pedagógicas innovadoras
+# Resultados de aprendizaje
+
+## Ejemplo para Gestión Organizacional (REFERENCIA)
+# Liderazgo transformacional
+# Cultura organizacional
+# Clima laboral
+# Performance organizacional
+# Factores de cambio organizacional
+
+# INSTRUCCIONES:
+# 1. Borra las variables de ejemplo
+# 2. Agrega tus variables específicas
+# 3. Actualiza el archivo config.py con tus variables
+# 4. Regenera el contenido con: python generar.py section X.X --force-reprocess
